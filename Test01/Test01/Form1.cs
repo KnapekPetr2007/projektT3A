@@ -2,25 +2,46 @@ namespace Test01
 {
     public partial class Form1 : Form
     {
-        int difficulty = 0;
+        random
 
-        List<string> easy = new List<string>
+        int difficulty = 1;
+
+        // The database of words categorized by difficulty
+        Dictionary<string, string[]> wordDatabase = new Dictionary<string, string[]>
         {
-            "myö", "kl·vesa", "monitor", "kabel", "server",
-            "router", "heslo", "soubor", "sloûka", "wifi"
+            { "Easy", new string[] { "APPLE", "DOG", "HOUSE", "BIRD", "SUN" } },
+            { "Medium", new string[] { "COMPUTER", "KEYBOARD", "MOUNTAIN", "WINDOW" } },
+            { "Hard", new string[] { "ARCHITECTURE", "STRENGTH", "RHYTHM", "SYNCHRONIZE" } }
         };
 
-        List<string> medium = new List<string>
-        {
-            "datab·ze", "program", "algoritmus", "kompilace", "firewall",
-            "procesor", "pamÏù", "aplikace", "ovladaË", "protokol"
-        };
+        // Global variables to track the current game state
+        string selectedWord = "";    // The actual word (e.g., "DOG")
+        string currentStatus = "";   // What the player sees (e.g., "_ _ _")
+        int errorCount = 0;          // How many wrong guesses the player has made
 
-        List<string> hard = new List<string>
+        private void InitializeGame()
         {
-            "virtualizace", "infrastruktura", "optimalizace", "autentizace", "kryptografie",
-            "synchronizace", "konfigurace", "implementace", "architektura", "komprimace"
-        };
+            // 1. Map the number (1,2,3) to the dictionary key
+            string levelKey = "Easy";
+            if (difficulty == 2) levelKey = "Medium";
+            else if (difficulty == 3) levelKey = "Hard";
+
+            // 2. Get the list of words for that difficulty
+            string[] potentialWords = wordDatabase[levelKey];
+
+            // 3. Pick one random word
+            selectedWord = potentialWords[rng.Next(potentialWords.Length)].ToUpper();
+
+            // 4. Create the dashes string (e.g., "____")
+            currentStatus = new string('_', selectedWord.Length);
+
+            // 5. Show it in your label 'textIn' with spaces for readability
+            textIn.Text = string.Join(" ", currentStatus.ToCharArray());
+
+            // 6. Reset the mistake counter and enable all buttons
+            errorCount = 0;
+            ResetVirtualKeyboard();
+        }
 
         public Form1()
         {
@@ -41,4 +62,10 @@ namespace Test01
         {
             difficulty = 1;
         }
+
+        private void asd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+}

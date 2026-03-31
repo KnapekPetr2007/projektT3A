@@ -117,7 +117,669 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;butH.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="butW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 382</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="butS.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="butZ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 474</value>
+  </data>
+  <data name="asd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 319</value>
+  </data>
+  <data name="&gt;&gt;butA.Name" xml:space="preserve">
+    <value>butA</value>
+  </data>
+  <data name="&gt;&gt;butK.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="butT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 382</value>
+  </data>
+  <data name="&gt;&gt;butV.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butX.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="butR.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="butZ.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="butE.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;butP.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butJ.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="butR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 382</value>
+  </data>
+  <data name="&gt;&gt;asd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="butG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 428</value>
+  </data>
+  <data name="&gt;&gt;butT.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="resetToolStripMenuItem.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="&gt;&gt;Sibenice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;butR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butX.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;butF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butC.Name" xml:space="preserve">
+    <value>butC</value>
+  </data>
+  <data name="butB.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;butP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="easyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="dToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="butW.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="butJ.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="butQ.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butH.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;butF.Name" xml:space="preserve">
+    <value>butF</value>
+  </data>
+  <data name="butL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 428</value>
+  </data>
+  <data name="hardToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="endToolStripMenuItem.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="&gt;&gt;hardToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="butJ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 428</value>
+  </data>
+  <data name="&gt;&gt;butL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butY.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 382</value>
+  </data>
+  <data name="&gt;&gt;butK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butM.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="butP.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Sibenice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 66</value>
+  </data>
+  <data name="&gt;&gt;butD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butG.Name" xml:space="preserve">
+    <value>butG</value>
+  </data>
+  <data name="&gt;&gt;butC.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="butC.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;butS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butR.Name" xml:space="preserve">
+    <value>butR</value>
+  </data>
+  <data name="&gt;&gt;butD.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;easyToolStripMenuItem.Name" xml:space="preserve">
+    <value>easyToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;butB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;easyToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butN.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="butO.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;butT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butW.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;butY.Name" xml:space="preserve">
+    <value>butY</value>
+  </data>
+  <data name="mediumToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="&gt;&gt;butL.Name" xml:space="preserve">
+    <value>butL</value>
+  </data>
+  <data name="&gt;&gt;butM.Name" xml:space="preserve">
+    <value>butM</value>
+  </data>
+  <data name="&gt;&gt;butZ.Name" xml:space="preserve">
+    <value>butZ</value>
+  </data>
+  <data name="&gt;&gt;butF.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butO.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="butY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 382</value>
+  </data>
+  <data name="&gt;&gt;butJ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;Sibenice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butP.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="butV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 474</value>
+  </data>
+  <data name="&gt;&gt;mediumToolStripMenuItem.Name" xml:space="preserve">
+    <value>mediumToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 24</value>
+  </data>
+  <data name="hardToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 22</value>
+  </data>
+  <data name="&gt;&gt;butQ.Name" xml:space="preserve">
+    <value>butQ</value>
+  </data>
+  <data name="&gt;&gt;butJ.Name" xml:space="preserve">
+    <value>butJ</value>
+  </data>
+  <data name="butD.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;butE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="resetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;butY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butZ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;resetToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 428</value>
+  </data>
+  <data name="&gt;&gt;butA.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asd.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="butC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 474</value>
+  </data>
+  <data name="&gt;&gt;butN.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dToolStripMenuItem.Name" xml:space="preserve">
+    <value>dToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;butR.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;butI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="endToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;dToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionsToolStripMenuItem.Name" xml:space="preserve">
+    <value>actionsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;endToolStripMenuItem.Name" xml:space="preserve">
+    <value>endToolStripMenuItem</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 561</value>
+  </data>
+  <data name="&gt;&gt;butC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butN.Name" xml:space="preserve">
+    <value>butN</value>
+  </data>
+  <data name="&gt;&gt;obtížnostToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butP.Name" xml:space="preserve">
+    <value>butP</value>
+  </data>
+  <data name="&gt;&gt;butK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butV.Name" xml:space="preserve">
+    <value>butV</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;butU.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;startToolStripMenuItem.Name" xml:space="preserve">
+    <value>startToolStripMenuItem</value>
+  </data>
+  <data name="dToolStripMenuItem.Text" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="&gt;&gt;butH.Name" xml:space="preserve">
+    <value>butH</value>
+  </data>
+  <data name="&gt;&gt;asd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;butN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 428</value>
+  </data>
+  <data name="butK.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;butS.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butB.Name" xml:space="preserve">
+    <value>butB</value>
+  </data>
+  <data name="butE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 382</value>
+  </data>
+  <data name="&gt;&gt;butV.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;asd.Name" xml:space="preserve">
+    <value>asd</value>
+  </data>
+  <data name="actionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="&gt;&gt;butF.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;butG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Sibenice.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="butF.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="butS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 428</value>
+  </data>
+  <data name="&gt;&gt;butW.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="butX.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;butO.Name" xml:space="preserve">
+    <value>butO</value>
+  </data>
+  <data name="butP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 382</value>
+  </data>
+  <data name="&gt;&gt;butU.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="butN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 474</value>
+  </data>
+  <data name="&gt;&gt;butI.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
+  </data>
+  <data name="&gt;&gt;butK.Name" xml:space="preserve">
+    <value>butK</value>
+  </data>
+  <data name="butV.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="butB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 474</value>
+  </data>
+  <data name="&gt;&gt;obtížnostToolStripMenuItem.Name" xml:space="preserve">
+    <value>obtížnostToolStripMenuItem</value>
+  </data>
+  <data name="butI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 382</value>
+  </data>
+  <data name="&gt;&gt;resetToolStripMenuItem.Name" xml:space="preserve">
+    <value>resetToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;butR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butY.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;butQ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="butA.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Sibenice.Name" xml:space="preserve">
+    <value>Sibenice</value>
+  </data>
+  <data name="butG.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;butE.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;butC.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;butL.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="butM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 474</value>
+  </data>
+  <data name="butT.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;mediumToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butN.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;butJ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;endToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butQ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 382</value>
+  </data>
+  <data name="&gt;&gt;butT.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="butX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 474</value>
+  </data>
+  <data name="&gt;&gt;butO.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="butY.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;butU.Name" xml:space="preserve">
+    <value>butU</value>
+  </data>
+  <data name="butM.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;Sibenice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butQ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butE.Name" xml:space="preserve">
+    <value>butE</value>
+  </data>
+  <data name="butF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 428</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="actionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="&gt;&gt;butZ.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;butI.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butD.Name" xml:space="preserve">
+    <value>butD</value>
+  </data>
+  <data name="easyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Easy</value>
+  </data>
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;butH.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="butH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 428</value>
+  </data>
+  <data name="&gt;&gt;butG.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="mediumToolStripMenuItem.Text" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="&gt;&gt;hardToolStripMenuItem.Name" xml:space="preserve">
+    <value>hardToolStripMenuItem</value>
+  </data>
+  <data name="butL.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;butW.Name" xml:space="preserve">
+    <value>butW</value>
+  </data>
+  <data name="butI.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;butI.Name" xml:space="preserve">
+    <value>butI</value>
+  </data>
+  <data name="&gt;&gt;butD.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butM.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butS.Name" xml:space="preserve">
+    <value>butS</value>
+  </data>
+  <data name="&gt;&gt;butB.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="butU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 382</value>
+  </data>
+  <data name="obtížnostToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="butU.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;butB.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;butT.Name" xml:space="preserve">
+    <value>butT</value>
+  </data>
+  <data name="butD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 428</value>
+  </data>
+  <data name="&gt;&gt;butO.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;butZ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butA.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;butS.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;butQ.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;butG.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="asd.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butX.Name" xml:space="preserve">
+    <value>butX</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-US-POSIX</value>
   </metadata>
 </root>
