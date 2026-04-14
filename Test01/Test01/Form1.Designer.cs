@@ -75,7 +75,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { obtížnostToolStripMenuItem, dToolStripMenuItem, actionsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(784, 24);
+            menuStrip1.RenderMode = ToolStripRenderMode.System;
+            menuStrip1.Size = new Size(780, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -94,21 +95,21 @@
             // hardToolStripMenuItem
             // 
             hardToolStripMenuItem.Name = "hardToolStripMenuItem";
-            hardToolStripMenuItem.Size = new Size(180, 22);
+            hardToolStripMenuItem.Size = new Size(119, 22);
             hardToolStripMenuItem.Text = "Hard";
             hardToolStripMenuItem.Click += hardToolStripMenuItem_Click;
             // 
             // mediumToolStripMenuItem
             // 
             mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
-            mediumToolStripMenuItem.Size = new Size(180, 22);
+            mediumToolStripMenuItem.Size = new Size(119, 22);
             mediumToolStripMenuItem.Text = "Medium";
             mediumToolStripMenuItem.Click += mediumToolStripMenuItem_Click;
             // 
             // easyToolStripMenuItem
             // 
             easyToolStripMenuItem.Name = "easyToolStripMenuItem";
-            easyToolStripMenuItem.Size = new Size(180, 22);
+            easyToolStripMenuItem.Size = new Size(119, 22);
             easyToolStripMenuItem.Text = "Easy";
             easyToolStripMenuItem.Click += easyToolStripMenuItem_Click;
             // 
@@ -122,27 +123,29 @@
             // startToolStripMenuItem
             // 
             startToolStripMenuItem.Name = "startToolStripMenuItem";
-            startToolStripMenuItem.Size = new Size(180, 22);
+            startToolStripMenuItem.Size = new Size(102, 22);
             startToolStripMenuItem.Text = "Start";
             startToolStripMenuItem.Click += startToolStripMenuItem_Click;
             // 
             // endToolStripMenuItem
             // 
             endToolStripMenuItem.Name = "endToolStripMenuItem";
-            endToolStripMenuItem.Size = new Size(180, 22);
+            endToolStripMenuItem.Size = new Size(102, 22);
             endToolStripMenuItem.Text = "End";
             endToolStripMenuItem.Click += endToolStripMenuItem_Click;
             // 
             // resetToolStripMenuItem
             // 
             resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            resetToolStripMenuItem.Size = new Size(180, 22);
+            resetToolStripMenuItem.Size = new Size(102, 22);
             resetToolStripMenuItem.Text = "Reset";
             resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             // 
             // butQ
             // 
-            butQ.Location = new Point(163, 370);
+            butQ.FlatStyle = FlatStyle.System;
+            butQ.Font = new Font("Tahoma", 20F, FontStyle.Bold);
+            butQ.Location = new Point(160, 401);
             butQ.Name = "butQ";
             butQ.Size = new Size(42, 42);
             butQ.TabIndex = 1;
@@ -153,25 +156,31 @@
             // asd
             // 
             asd.FlatStyle = FlatStyle.System;
-            asd.Location = new Point(163, 334);
+            asd.Font = new Font("Tahoma", 36F, FontStyle.Bold);
+            asd.Location = new Point(12, 319);
             asd.Name = "asd";
-            asd.Size = new Size(489, 33);
+            asd.Size = new Size(756, 79);
             asd.TabIndex = 27;
+            asd.TextAlign = ContentAlignment.MiddleCenter;
             asd.Click += asd_Click;
             // 
             // Sibenice
             // 
+            Sibenice.BackColor = Color.White;
+            Sibenice.BorderStyle = BorderStyle.Fixed3D;
             Sibenice.Location = new Point(163, 40);
             Sibenice.Name = "Sibenice";
-            Sibenice.Size = new Size(489, 276);
+            Sibenice.Size = new Size(500, 275);
             Sibenice.TabIndex = 28;
             Sibenice.TabStop = false;
             Sibenice.Paint += Sibenice_Paint;
             // 
             // butW
             // 
+            butW.FlatStyle = FlatStyle.System;
+            butW.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butW.ImeMode = ImeMode.NoControl;
-            butW.Location = new Point(211, 370);
+            butW.Location = new Point(208, 401);
             butW.Name = "butW";
             butW.Size = new Size(42, 42);
             butW.TabIndex = 29;
@@ -180,8 +189,10 @@
             // 
             // butE
             // 
+            butE.FlatStyle = FlatStyle.System;
+            butE.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butE.ImeMode = ImeMode.NoControl;
-            butE.Location = new Point(259, 370);
+            butE.Location = new Point(256, 401);
             butE.Name = "butE";
             butE.Size = new Size(42, 42);
             butE.TabIndex = 30;
@@ -190,8 +201,10 @@
             // 
             // butR
             // 
+            butR.FlatStyle = FlatStyle.System;
+            butR.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butR.ImeMode = ImeMode.NoControl;
-            butR.Location = new Point(307, 370);
+            butR.Location = new Point(304, 401);
             butR.Name = "butR";
             butR.Size = new Size(42, 42);
             butR.TabIndex = 31;
@@ -200,8 +213,10 @@
             // 
             // butT
             // 
+            butT.FlatStyle = FlatStyle.System;
+            butT.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butT.ImeMode = ImeMode.NoControl;
-            butT.Location = new Point(355, 370);
+            butT.Location = new Point(352, 401);
             butT.Name = "butT";
             butT.Size = new Size(42, 42);
             butT.TabIndex = 32;
@@ -210,8 +225,10 @@
             // 
             // butY
             // 
+            butY.FlatStyle = FlatStyle.System;
+            butY.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butY.ImeMode = ImeMode.NoControl;
-            butY.Location = new Point(403, 370);
+            butY.Location = new Point(400, 401);
             butY.Name = "butY";
             butY.Size = new Size(42, 42);
             butY.TabIndex = 33;
@@ -220,8 +237,10 @@
             // 
             // butU
             // 
+            butU.FlatStyle = FlatStyle.System;
+            butU.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butU.ImeMode = ImeMode.NoControl;
-            butU.Location = new Point(451, 370);
+            butU.Location = new Point(448, 401);
             butU.Name = "butU";
             butU.Size = new Size(42, 42);
             butU.TabIndex = 34;
@@ -230,8 +249,10 @@
             // 
             // butI
             // 
+            butI.FlatStyle = FlatStyle.System;
+            butI.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butI.ImeMode = ImeMode.NoControl;
-            butI.Location = new Point(499, 370);
+            butI.Location = new Point(496, 401);
             butI.Name = "butI";
             butI.Size = new Size(42, 42);
             butI.TabIndex = 35;
@@ -240,8 +261,10 @@
             // 
             // butO
             // 
+            butO.FlatStyle = FlatStyle.System;
+            butO.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butO.ImeMode = ImeMode.NoControl;
-            butO.Location = new Point(547, 370);
+            butO.Location = new Point(544, 401);
             butO.Name = "butO";
             butO.Size = new Size(42, 42);
             butO.TabIndex = 36;
@@ -250,8 +273,10 @@
             // 
             // butP
             // 
+            butP.FlatStyle = FlatStyle.System;
+            butP.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butP.ImeMode = ImeMode.NoControl;
-            butP.Location = new Point(595, 370);
+            butP.Location = new Point(592, 401);
             butP.Name = "butP";
             butP.Size = new Size(42, 42);
             butP.TabIndex = 37;
@@ -260,8 +285,10 @@
             // 
             // butA
             // 
+            butA.FlatStyle = FlatStyle.System;
+            butA.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butA.ImeMode = ImeMode.NoControl;
-            butA.Location = new Point(181, 418);
+            butA.Location = new Point(178, 449);
             butA.Name = "butA";
             butA.Size = new Size(42, 42);
             butA.TabIndex = 38;
@@ -270,8 +297,10 @@
             // 
             // butS
             // 
+            butS.FlatStyle = FlatStyle.System;
+            butS.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butS.ImeMode = ImeMode.NoControl;
-            butS.Location = new Point(229, 418);
+            butS.Location = new Point(226, 449);
             butS.Name = "butS";
             butS.Size = new Size(42, 42);
             butS.TabIndex = 39;
@@ -280,8 +309,10 @@
             // 
             // butD
             // 
+            butD.FlatStyle = FlatStyle.System;
+            butD.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butD.ImeMode = ImeMode.NoControl;
-            butD.Location = new Point(277, 418);
+            butD.Location = new Point(274, 449);
             butD.Name = "butD";
             butD.Size = new Size(42, 42);
             butD.TabIndex = 40;
@@ -290,8 +321,10 @@
             // 
             // butF
             // 
+            butF.FlatStyle = FlatStyle.System;
+            butF.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butF.ImeMode = ImeMode.NoControl;
-            butF.Location = new Point(325, 418);
+            butF.Location = new Point(322, 449);
             butF.Name = "butF";
             butF.Size = new Size(42, 42);
             butF.TabIndex = 41;
@@ -300,8 +333,10 @@
             // 
             // butG
             // 
+            butG.FlatStyle = FlatStyle.System;
+            butG.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butG.ImeMode = ImeMode.NoControl;
-            butG.Location = new Point(373, 418);
+            butG.Location = new Point(370, 449);
             butG.Name = "butG";
             butG.Size = new Size(42, 42);
             butG.TabIndex = 42;
@@ -310,8 +345,10 @@
             // 
             // butH
             // 
+            butH.FlatStyle = FlatStyle.System;
+            butH.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butH.ImeMode = ImeMode.NoControl;
-            butH.Location = new Point(421, 418);
+            butH.Location = new Point(418, 449);
             butH.Name = "butH";
             butH.Size = new Size(42, 42);
             butH.TabIndex = 43;
@@ -320,8 +357,10 @@
             // 
             // butJ
             // 
+            butJ.FlatStyle = FlatStyle.System;
+            butJ.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butJ.ImeMode = ImeMode.NoControl;
-            butJ.Location = new Point(469, 418);
+            butJ.Location = new Point(466, 449);
             butJ.Name = "butJ";
             butJ.Size = new Size(42, 42);
             butJ.TabIndex = 44;
@@ -330,8 +369,10 @@
             // 
             // butK
             // 
+            butK.FlatStyle = FlatStyle.System;
+            butK.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butK.ImeMode = ImeMode.NoControl;
-            butK.Location = new Point(517, 418);
+            butK.Location = new Point(514, 449);
             butK.Name = "butK";
             butK.Size = new Size(42, 42);
             butK.TabIndex = 45;
@@ -340,8 +381,10 @@
             // 
             // butL
             // 
+            butL.FlatStyle = FlatStyle.System;
+            butL.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butL.ImeMode = ImeMode.NoControl;
-            butL.Location = new Point(565, 418);
+            butL.Location = new Point(562, 449);
             butL.Name = "butL";
             butL.Size = new Size(42, 42);
             butL.TabIndex = 46;
@@ -350,8 +393,10 @@
             // 
             // butZ
             // 
+            butZ.FlatStyle = FlatStyle.System;
+            butZ.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butZ.ImeMode = ImeMode.NoControl;
-            butZ.Location = new Point(201, 466);
+            butZ.Location = new Point(198, 497);
             butZ.Name = "butZ";
             butZ.Size = new Size(42, 42);
             butZ.TabIndex = 47;
@@ -360,8 +405,10 @@
             // 
             // butX
             // 
+            butX.FlatStyle = FlatStyle.System;
+            butX.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butX.ImeMode = ImeMode.NoControl;
-            butX.Location = new Point(249, 466);
+            butX.Location = new Point(246, 497);
             butX.Name = "butX";
             butX.Size = new Size(42, 42);
             butX.TabIndex = 48;
@@ -370,8 +417,10 @@
             // 
             // butC
             // 
+            butC.FlatStyle = FlatStyle.System;
+            butC.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butC.ImeMode = ImeMode.NoControl;
-            butC.Location = new Point(297, 466);
+            butC.Location = new Point(294, 497);
             butC.Name = "butC";
             butC.Size = new Size(42, 42);
             butC.TabIndex = 49;
@@ -380,8 +429,10 @@
             // 
             // butV
             // 
+            butV.FlatStyle = FlatStyle.System;
+            butV.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butV.ImeMode = ImeMode.NoControl;
-            butV.Location = new Point(345, 466);
+            butV.Location = new Point(342, 497);
             butV.Name = "butV";
             butV.Size = new Size(42, 42);
             butV.TabIndex = 50;
@@ -390,8 +441,10 @@
             // 
             // butB
             // 
+            butB.FlatStyle = FlatStyle.System;
+            butB.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butB.ImeMode = ImeMode.NoControl;
-            butB.Location = new Point(393, 466);
+            butB.Location = new Point(390, 497);
             butB.Name = "butB";
             butB.Size = new Size(42, 42);
             butB.TabIndex = 51;
@@ -400,8 +453,10 @@
             // 
             // butN
             // 
+            butN.FlatStyle = FlatStyle.System;
+            butN.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butN.ImeMode = ImeMode.NoControl;
-            butN.Location = new Point(441, 466);
+            butN.Location = new Point(438, 497);
             butN.Name = "butN";
             butN.Size = new Size(42, 42);
             butN.TabIndex = 52;
@@ -410,8 +465,10 @@
             // 
             // butM
             // 
+            butM.FlatStyle = FlatStyle.System;
+            butM.Font = new Font("Tahoma", 20F, FontStyle.Bold);
             butM.ImeMode = ImeMode.NoControl;
-            butM.Location = new Point(489, 466);
+            butM.Location = new Point(486, 497);
             butM.Name = "butM";
             butM.Size = new Size(42, 42);
             butM.TabIndex = 53;
@@ -420,9 +477,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 561);
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(236, 233, 216);
+            ClientSize = new Size(780, 557);
             Controls.Add(butM);
             Controls.Add(butN);
             Controls.Add(butB);
@@ -452,12 +509,13 @@
             Controls.Add(asd);
             Controls.Add(butQ);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
             MaximumSize = new Size(800, 600);
             MinimumSize = new Size(800, 600);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Šibenice";
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
