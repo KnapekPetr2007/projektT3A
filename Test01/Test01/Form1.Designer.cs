@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             obtížnostToolStripMenuItem = new ToolStripMenuItem();
             dToolStripMenuItem = new ToolStripMenuItem();
@@ -40,6 +39,8 @@
             endToolStripMenuItem = new ToolStripMenuItem();
             resetToolStripMenuItem = new ToolStripMenuItem();
             butQ = new Button();
+            asd = new Label();
+            Sibenice = new PictureBox();
             butW = new Button();
             butE = new Button();
             butR = new Button();
@@ -65,243 +66,363 @@
             butB = new Button();
             butN = new Button();
             butM = new Button();
-            asd = new Label();
-            Sibenice = new PictureBox();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Sibenice).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Items.AddRange(new ToolStripItem[] { obtížnostToolStripMenuItem, dToolStripMenuItem, actionsToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(784, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // obtížnostToolStripMenuItem
             // 
-            resources.ApplyResources(obtížnostToolStripMenuItem, "obtížnostToolStripMenuItem");
             obtížnostToolStripMenuItem.Name = "obtížnostToolStripMenuItem";
+            obtížnostToolStripMenuItem.Size = new Size(12, 20);
             // 
             // dToolStripMenuItem
             // 
-            resources.ApplyResources(dToolStripMenuItem, "dToolStripMenuItem");
             dToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { hardToolStripMenuItem, mediumToolStripMenuItem, easyToolStripMenuItem });
             dToolStripMenuItem.Name = "dToolStripMenuItem";
+            dToolStripMenuItem.Size = new Size(67, 20);
+            dToolStripMenuItem.Text = "Difficulty";
             // 
             // hardToolStripMenuItem
             // 
-            resources.ApplyResources(hardToolStripMenuItem, "hardToolStripMenuItem");
             hardToolStripMenuItem.Name = "hardToolStripMenuItem";
+            hardToolStripMenuItem.Size = new Size(180, 22);
+            hardToolStripMenuItem.Text = "Hard";
             hardToolStripMenuItem.Click += hardToolStripMenuItem_Click;
             // 
             // mediumToolStripMenuItem
             // 
-            resources.ApplyResources(mediumToolStripMenuItem, "mediumToolStripMenuItem");
             mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
+            mediumToolStripMenuItem.Size = new Size(180, 22);
+            mediumToolStripMenuItem.Text = "Medium";
             mediumToolStripMenuItem.Click += mediumToolStripMenuItem_Click;
             // 
             // easyToolStripMenuItem
             // 
-            resources.ApplyResources(easyToolStripMenuItem, "easyToolStripMenuItem");
             easyToolStripMenuItem.Name = "easyToolStripMenuItem";
+            easyToolStripMenuItem.Size = new Size(180, 22);
+            easyToolStripMenuItem.Text = "Easy";
             easyToolStripMenuItem.Click += easyToolStripMenuItem_Click;
             // 
             // actionsToolStripMenuItem
             // 
-            resources.ApplyResources(actionsToolStripMenuItem, "actionsToolStripMenuItem");
             actionsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { startToolStripMenuItem, endToolStripMenuItem, resetToolStripMenuItem });
             actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
+            actionsToolStripMenuItem.Size = new Size(59, 20);
+            actionsToolStripMenuItem.Text = "Actions";
             // 
             // startToolStripMenuItem
             // 
-            resources.ApplyResources(startToolStripMenuItem, "startToolStripMenuItem");
             startToolStripMenuItem.Name = "startToolStripMenuItem";
+            startToolStripMenuItem.Size = new Size(180, 22);
+            startToolStripMenuItem.Text = "Start";
+            startToolStripMenuItem.Click += startToolStripMenuItem_Click;
             // 
             // endToolStripMenuItem
             // 
-            resources.ApplyResources(endToolStripMenuItem, "endToolStripMenuItem");
             endToolStripMenuItem.Name = "endToolStripMenuItem";
+            endToolStripMenuItem.Size = new Size(180, 22);
+            endToolStripMenuItem.Text = "End";
+            endToolStripMenuItem.Click += endToolStripMenuItem_Click;
             // 
             // resetToolStripMenuItem
             // 
-            resources.ApplyResources(resetToolStripMenuItem, "resetToolStripMenuItem");
             resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            resetToolStripMenuItem.Size = new Size(180, 22);
+            resetToolStripMenuItem.Text = "Reset";
+            resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             // 
             // butQ
             // 
-            resources.ApplyResources(butQ, "butQ");
+            butQ.Location = new Point(163, 370);
             butQ.Name = "butQ";
+            butQ.Size = new Size(42, 42);
+            butQ.TabIndex = 1;
+            butQ.Text = "Q";
             butQ.UseVisualStyleBackColor = true;
-            // 
-            // butW
-            // 
-            resources.ApplyResources(butW, "butW");
-            butW.Name = "butW";
-            butW.UseVisualStyleBackColor = true;
-            // 
-            // butE
-            // 
-            resources.ApplyResources(butE, "butE");
-            butE.Name = "butE";
-            butE.UseVisualStyleBackColor = true;
-            // 
-            // butR
-            // 
-            resources.ApplyResources(butR, "butR");
-            butR.Name = "butR";
-            butR.UseVisualStyleBackColor = true;
-            // 
-            // butT
-            // 
-            resources.ApplyResources(butT, "butT");
-            butT.Name = "butT";
-            butT.UseVisualStyleBackColor = true;
-            // 
-            // butY
-            // 
-            resources.ApplyResources(butY, "butY");
-            butY.Name = "butY";
-            butY.UseVisualStyleBackColor = true;
-            // 
-            // butU
-            // 
-            resources.ApplyResources(butU, "butU");
-            butU.Name = "butU";
-            butU.UseVisualStyleBackColor = true;
-            // 
-            // butI
-            // 
-            resources.ApplyResources(butI, "butI");
-            butI.Name = "butI";
-            butI.UseVisualStyleBackColor = true;
-            // 
-            // butO
-            // 
-            resources.ApplyResources(butO, "butO");
-            butO.Name = "butO";
-            butO.UseVisualStyleBackColor = true;
-            // 
-            // butP
-            // 
-            resources.ApplyResources(butP, "butP");
-            butP.Name = "butP";
-            butP.UseVisualStyleBackColor = true;
-            // 
-            // butA
-            // 
-            resources.ApplyResources(butA, "butA");
-            butA.Name = "butA";
-            butA.UseVisualStyleBackColor = true;
-            // 
-            // butS
-            // 
-            resources.ApplyResources(butS, "butS");
-            butS.Name = "butS";
-            butS.UseVisualStyleBackColor = true;
-            // 
-            // butD
-            // 
-            resources.ApplyResources(butD, "butD");
-            butD.Name = "butD";
-            butD.UseVisualStyleBackColor = true;
-            // 
-            // butF
-            // 
-            resources.ApplyResources(butF, "butF");
-            butF.Name = "butF";
-            butF.UseVisualStyleBackColor = true;
-            // 
-            // butG
-            // 
-            resources.ApplyResources(butG, "butG");
-            butG.Name = "butG";
-            butG.UseVisualStyleBackColor = true;
-            // 
-            // butH
-            // 
-            resources.ApplyResources(butH, "butH");
-            butH.Name = "butH";
-            butH.UseVisualStyleBackColor = true;
-            // 
-            // butJ
-            // 
-            resources.ApplyResources(butJ, "butJ");
-            butJ.Name = "butJ";
-            butJ.UseVisualStyleBackColor = true;
-            // 
-            // butK
-            // 
-            resources.ApplyResources(butK, "butK");
-            butK.Name = "butK";
-            butK.UseVisualStyleBackColor = true;
-            // 
-            // butL
-            // 
-            resources.ApplyResources(butL, "butL");
-            butL.Name = "butL";
-            butL.UseVisualStyleBackColor = true;
-            // 
-            // butZ
-            // 
-            resources.ApplyResources(butZ, "butZ");
-            butZ.Name = "butZ";
-            butZ.UseVisualStyleBackColor = true;
-            // 
-            // butX
-            // 
-            resources.ApplyResources(butX, "butX");
-            butX.Name = "butX";
-            butX.UseVisualStyleBackColor = true;
-            // 
-            // butC
-            // 
-            resources.ApplyResources(butC, "butC");
-            butC.Name = "butC";
-            butC.UseVisualStyleBackColor = true;
-            // 
-            // butV
-            // 
-            resources.ApplyResources(butV, "butV");
-            butV.Name = "butV";
-            butV.UseVisualStyleBackColor = true;
-            // 
-            // butB
-            // 
-            resources.ApplyResources(butB, "butB");
-            butB.Name = "butB";
-            butB.UseVisualStyleBackColor = true;
-            // 
-            // butN
-            // 
-            resources.ApplyResources(butN, "butN");
-            butN.Name = "butN";
-            butN.UseVisualStyleBackColor = true;
-            // 
-            // butM
-            // 
-            resources.ApplyResources(butM, "butM");
-            butM.Name = "butM";
-            butM.UseVisualStyleBackColor = true;
+            butQ.Click += Hra_Click;
             // 
             // asd
             // 
-            resources.ApplyResources(asd, "asd");
             asd.FlatStyle = FlatStyle.System;
+            asd.Location = new Point(163, 334);
             asd.Name = "asd";
+            asd.Size = new Size(489, 33);
+            asd.TabIndex = 27;
             asd.Click += asd_Click;
             // 
             // Sibenice
             // 
-            resources.ApplyResources(Sibenice, "Sibenice");
+            Sibenice.Location = new Point(163, 40);
             Sibenice.Name = "Sibenice";
+            Sibenice.Size = new Size(489, 276);
+            Sibenice.TabIndex = 28;
             Sibenice.TabStop = false;
+            Sibenice.Paint += Sibenice_Paint;
+            // 
+            // butW
+            // 
+            butW.ImeMode = ImeMode.NoControl;
+            butW.Location = new Point(211, 370);
+            butW.Name = "butW";
+            butW.Size = new Size(42, 42);
+            butW.TabIndex = 29;
+            butW.Text = "W";
+            butW.UseVisualStyleBackColor = true;
+            // 
+            // butE
+            // 
+            butE.ImeMode = ImeMode.NoControl;
+            butE.Location = new Point(259, 370);
+            butE.Name = "butE";
+            butE.Size = new Size(42, 42);
+            butE.TabIndex = 30;
+            butE.Text = "E";
+            butE.UseVisualStyleBackColor = true;
+            // 
+            // butR
+            // 
+            butR.ImeMode = ImeMode.NoControl;
+            butR.Location = new Point(307, 370);
+            butR.Name = "butR";
+            butR.Size = new Size(42, 42);
+            butR.TabIndex = 31;
+            butR.Text = "R";
+            butR.UseVisualStyleBackColor = true;
+            // 
+            // butT
+            // 
+            butT.ImeMode = ImeMode.NoControl;
+            butT.Location = new Point(355, 370);
+            butT.Name = "butT";
+            butT.Size = new Size(42, 42);
+            butT.TabIndex = 32;
+            butT.Text = "T";
+            butT.UseVisualStyleBackColor = true;
+            // 
+            // butY
+            // 
+            butY.ImeMode = ImeMode.NoControl;
+            butY.Location = new Point(403, 370);
+            butY.Name = "butY";
+            butY.Size = new Size(42, 42);
+            butY.TabIndex = 33;
+            butY.Text = "Y";
+            butY.UseVisualStyleBackColor = true;
+            // 
+            // butU
+            // 
+            butU.ImeMode = ImeMode.NoControl;
+            butU.Location = new Point(451, 370);
+            butU.Name = "butU";
+            butU.Size = new Size(42, 42);
+            butU.TabIndex = 34;
+            butU.Text = "U";
+            butU.UseVisualStyleBackColor = true;
+            // 
+            // butI
+            // 
+            butI.ImeMode = ImeMode.NoControl;
+            butI.Location = new Point(499, 370);
+            butI.Name = "butI";
+            butI.Size = new Size(42, 42);
+            butI.TabIndex = 35;
+            butI.Text = "I";
+            butI.UseVisualStyleBackColor = true;
+            // 
+            // butO
+            // 
+            butO.ImeMode = ImeMode.NoControl;
+            butO.Location = new Point(547, 370);
+            butO.Name = "butO";
+            butO.Size = new Size(42, 42);
+            butO.TabIndex = 36;
+            butO.Text = "O";
+            butO.UseVisualStyleBackColor = true;
+            // 
+            // butP
+            // 
+            butP.ImeMode = ImeMode.NoControl;
+            butP.Location = new Point(595, 370);
+            butP.Name = "butP";
+            butP.Size = new Size(42, 42);
+            butP.TabIndex = 37;
+            butP.Text = "P";
+            butP.UseVisualStyleBackColor = true;
+            // 
+            // butA
+            // 
+            butA.ImeMode = ImeMode.NoControl;
+            butA.Location = new Point(181, 418);
+            butA.Name = "butA";
+            butA.Size = new Size(42, 42);
+            butA.TabIndex = 38;
+            butA.Text = "A";
+            butA.UseVisualStyleBackColor = true;
+            // 
+            // butS
+            // 
+            butS.ImeMode = ImeMode.NoControl;
+            butS.Location = new Point(229, 418);
+            butS.Name = "butS";
+            butS.Size = new Size(42, 42);
+            butS.TabIndex = 39;
+            butS.Text = "S";
+            butS.UseVisualStyleBackColor = true;
+            // 
+            // butD
+            // 
+            butD.ImeMode = ImeMode.NoControl;
+            butD.Location = new Point(277, 418);
+            butD.Name = "butD";
+            butD.Size = new Size(42, 42);
+            butD.TabIndex = 40;
+            butD.Text = "D";
+            butD.UseVisualStyleBackColor = true;
+            // 
+            // butF
+            // 
+            butF.ImeMode = ImeMode.NoControl;
+            butF.Location = new Point(325, 418);
+            butF.Name = "butF";
+            butF.Size = new Size(42, 42);
+            butF.TabIndex = 41;
+            butF.Text = "F";
+            butF.UseVisualStyleBackColor = true;
+            // 
+            // butG
+            // 
+            butG.ImeMode = ImeMode.NoControl;
+            butG.Location = new Point(373, 418);
+            butG.Name = "butG";
+            butG.Size = new Size(42, 42);
+            butG.TabIndex = 42;
+            butG.Text = "G";
+            butG.UseVisualStyleBackColor = true;
+            // 
+            // butH
+            // 
+            butH.ImeMode = ImeMode.NoControl;
+            butH.Location = new Point(421, 418);
+            butH.Name = "butH";
+            butH.Size = new Size(42, 42);
+            butH.TabIndex = 43;
+            butH.Text = "H";
+            butH.UseVisualStyleBackColor = true;
+            // 
+            // butJ
+            // 
+            butJ.ImeMode = ImeMode.NoControl;
+            butJ.Location = new Point(469, 418);
+            butJ.Name = "butJ";
+            butJ.Size = new Size(42, 42);
+            butJ.TabIndex = 44;
+            butJ.Text = "J";
+            butJ.UseVisualStyleBackColor = true;
+            // 
+            // butK
+            // 
+            butK.ImeMode = ImeMode.NoControl;
+            butK.Location = new Point(517, 418);
+            butK.Name = "butK";
+            butK.Size = new Size(42, 42);
+            butK.TabIndex = 45;
+            butK.Text = "K";
+            butK.UseVisualStyleBackColor = true;
+            // 
+            // butL
+            // 
+            butL.ImeMode = ImeMode.NoControl;
+            butL.Location = new Point(565, 418);
+            butL.Name = "butL";
+            butL.Size = new Size(42, 42);
+            butL.TabIndex = 46;
+            butL.Text = "L";
+            butL.UseVisualStyleBackColor = true;
+            // 
+            // butZ
+            // 
+            butZ.ImeMode = ImeMode.NoControl;
+            butZ.Location = new Point(201, 466);
+            butZ.Name = "butZ";
+            butZ.Size = new Size(42, 42);
+            butZ.TabIndex = 47;
+            butZ.Text = "Z";
+            butZ.UseVisualStyleBackColor = true;
+            // 
+            // butX
+            // 
+            butX.ImeMode = ImeMode.NoControl;
+            butX.Location = new Point(249, 466);
+            butX.Name = "butX";
+            butX.Size = new Size(42, 42);
+            butX.TabIndex = 48;
+            butX.Text = "X";
+            butX.UseVisualStyleBackColor = true;
+            // 
+            // butC
+            // 
+            butC.ImeMode = ImeMode.NoControl;
+            butC.Location = new Point(297, 466);
+            butC.Name = "butC";
+            butC.Size = new Size(42, 42);
+            butC.TabIndex = 49;
+            butC.Text = "C";
+            butC.UseVisualStyleBackColor = true;
+            // 
+            // butV
+            // 
+            butV.ImeMode = ImeMode.NoControl;
+            butV.Location = new Point(345, 466);
+            butV.Name = "butV";
+            butV.Size = new Size(42, 42);
+            butV.TabIndex = 50;
+            butV.Text = "V";
+            butV.UseVisualStyleBackColor = true;
+            // 
+            // butB
+            // 
+            butB.ImeMode = ImeMode.NoControl;
+            butB.Location = new Point(393, 466);
+            butB.Name = "butB";
+            butB.Size = new Size(42, 42);
+            butB.TabIndex = 51;
+            butB.Text = "B";
+            butB.UseVisualStyleBackColor = true;
+            // 
+            // butN
+            // 
+            butN.ImeMode = ImeMode.NoControl;
+            butN.Location = new Point(441, 466);
+            butN.Name = "butN";
+            butN.Size = new Size(42, 42);
+            butN.TabIndex = 52;
+            butN.Text = "N";
+            butN.UseVisualStyleBackColor = true;
+            // 
+            // butM
+            // 
+            butM.ImeMode = ImeMode.NoControl;
+            butM.Location = new Point(489, 466);
+            butM.Name = "butM";
+            butM.Size = new Size(42, 42);
+            butM.TabIndex = 53;
+            butM.Text = "M";
+            butM.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            resources.ApplyResources(this, "$this");
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(Sibenice);
-            Controls.Add(asd);
+            ClientSize = new Size(784, 561);
             Controls.Add(butM);
             Controls.Add(butN);
             Controls.Add(butB);
@@ -327,11 +448,17 @@
             Controls.Add(butR);
             Controls.Add(butE);
             Controls.Add(butW);
+            Controls.Add(Sibenice);
+            Controls.Add(asd);
             Controls.Add(butQ);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
+            MaximumSize = new Size(800, 600);
+            MinimumSize = new Size(800, 600);
             Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Sibenice).EndInit();
@@ -352,6 +479,8 @@
         private ToolStripMenuItem endToolStripMenuItem;
         private ToolStripMenuItem resetToolStripMenuItem;
         private Button butQ;
+        private Label asd;
+        private PictureBox Sibenice;
         private Button butW;
         private Button butE;
         private Button butR;
@@ -377,7 +506,5 @@
         private Button butB;
         private Button butN;
         private Button butM;
-        private Label asd;
-        private PictureBox Sibenice;
     }
 }
