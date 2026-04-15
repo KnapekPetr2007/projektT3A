@@ -66,13 +66,15 @@
             butB = new Button();
             butN = new Button();
             butM = new Button();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Sibenice).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { obtížnostToolStripMenuItem, dToolStripMenuItem, actionsToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { obtížnostToolStripMenuItem, dToolStripMenuItem, actionsToolStripMenuItem, helpToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
@@ -475,6 +477,20 @@
             butM.Text = "M";
             butM.UseVisualStyleBackColor = true;
             // 
+            // helpToolStripMenuItem
+            // 
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Text = "Help";
+            helpToolStripMenuItem.Click += helpToolStripMenuItem_Click;
+            // 
+            // aboutToolStripMenuItem
+            // 
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new Size(52, 20);
+            aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -564,5 +580,7 @@
         private Button butB;
         private Button butN;
         private Button butM;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

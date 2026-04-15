@@ -224,5 +224,33 @@ namespace Test01
         }
 
         private void asd_Click(object sender, EventArgs e) { }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(@"How to Play:
+-------------------------------------------------------------------------------
+1. Select the difficulty level in the 'Difficulty' menu.
+2. Click 'Start' in the 'Actions' menu to begin.
+3. Guess letters using the on-screen keyboard.
+4. If you've played at least one game, use 'Reset' in the Actions menu to play again.
+5. To exit, select 'Exit' in the 'Actions' menu.",
+"Instructions",
+MessageBoxButtons.OK,
+MessageBoxIcon.Question);
+            
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($@"Hangman v1.0
+-------------------------------------------------------------------------------
+Developed in: Visual Studio 2022
+Platform: .NET 8.0
+
+© {DateTime.Now.Year} All rights reserved.",
+"About Hangman",
+MessageBoxButtons.OK,
+MessageBoxIcon.Information);
+        }
     }
 }
