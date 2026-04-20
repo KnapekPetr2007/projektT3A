@@ -8,43 +8,68 @@ namespace Test01
 {
     public partial class Form1 : Form
     {
-        private Random rng = new Random();
-        private int difficulty = 0; // 0 znamená, že ještì nebylo vybráno
-        private string selectedWord = "";
-        private string currentStatus = "";
-        private int errorCount = 0;
-        private const int maxErrors = 10;
+        // --- GLOBAL GAME STATE VARIABLES ---
+        // Used to generate random word indices from the database
+        Random rng = new Random();
 
-        // Stavové promìnné pro logiku menu
-        private bool gameActive = false;
-        private bool firstGamePlayed = false;
+        // Level indicator (0: None, 1: Easy, 2: Medium, 3: Hard)
+        int difficulty = 0;
 
-        private Dictionary<string, string[]> wordDatabase = new Dictionary<string, string[]>
+        // The word chosen for the current round and its hidden display (e.g., "_ _ _")
+        string selectedWord = "";
+        string currentStatus = "";
+
+        // Track mistake progress (errorCount) against the maximum allowed (maxErrors)
+        int errorCount = 0;
+        int maxErrors = 10;
+
+        // Game flow control (1: Game is running, 0: Game is paused or ended)
+        int gameActive = 0;
+
+        // Historical tracker to decide when to show the 'Reset' button (1: Yes, 0: No)
+        int firstGamePlayed = 0;
+
+        // Word storage categorized by difficulty level
+        Dictionary<string, string[]> wordDatabase = new Dictionary<string, string[]>
         {
-            { "Easy", new string[] { "APPLE", "DOG", "HOUSE", "BIRD", "SUN" } },
-            { "Medium", new string[] { "COMPUTER", "KEYBOARD", "MOUNTAIN", "WINDOW" } },
-            { "Hard", new string[] { "ARCHITECTURE", "STRENGTH", "RHYTHM", "SYNCHRONIZE" } }
+            { "Easy", new string[] {
+                "APPLE", "DOG", "HOUSE", "BIRD", "SUN", "FISH", "CAT", "TREE", "MOON", "CAKE",
+                "BALL", "FROG", "BOOK", "MILK", "HAND", "STAR", "BOAT", "FIRE", "DUCK", "SNOW",
+                "RAIN", "COW", "SHOE", "LAMP", "DOOR", "RING", "LEAF", "BEAR", "PIG", "CUP",
+                "DESK", "BIKE"
+            } },
+            { "Medium", new string[] {
+                "COMPUTER", "KEYBOARD", "MOUNTAIN", "WINDOW", "GARDEN", "KITCHEN", "SILENCE", "JOURNEY",
+                "BICYCLE", "WEATHER", "PICTURE", "HAMMER", "COUNTRY", "PENCIL", "PLASTIC", "FLOWER",
+                "MORNING", "TURTLE", "BOTTLE", "ORANGE", "SCHOOL", "BRIDGE", "ROCKET", "GUITAR",
+                "PLANET", "COFFEE", "TICKET", "DIAMOND", "BANANA", "FOREST", "PLAYER"
+            } },
+            { "Hard", new string[] {
+                "ARCHITECTURE", "STRENGTH", "RHYTHM", "SYNCHRONIZE", "ABBREVIATION", "AMBIDEXTROUS", "BENEVOLENT", "CHARACTERISTIC",
+                "CONNOISSEUR", "DIFFERENTIATION", "ENTHUSIASTIC", "FLUORESCENT", "HYPOTHETICAL", "IMPOSSIBLE", "JUXTAPOSITION", "KALEIDOSCOPE",
+                "LABYRINTHINE", "METAMORPHOSIS", "NEIGHBORHOOD", "OSCILLATION", "PHENOMENON", "QUESTIONNAIRE", "RENAISSANCE", "SOPHISTICATED",
+                "THERMODYNAMICS", "UNBELIEVABLE", "VOCABULARY", "WHIMSICAL", "XENOPHOBIA", "YESTERDAY", "ZOOLOGY", "PHILANTHROPY"
+            } }
         };
 
         public Form1()
         {
             InitializeComponent();
             ManualEventWiring();
-
-            // Na úplném zaèátku skryjeme Reset
             resetToolStripMenuItem.Visible = false;
         }
 
+        // Connects designer controls to their respective code logic
         private void ManualEventWiring()
         {
             startToolStripMenuItem.Click += startToolStripMenuItem_Click;
             resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             endToolStripMenuItem.Click += endToolStripMenuItem_Click;
-
             easyToolStripMenuItem.Click += easyToolStripMenuItem_Click;
             mediumToolStripMenuItem.Click += mediumToolStripMenuItem_Click;
             hardToolStripMenuItem.Click += hardToolStripMenuItem_Click;
 
+            // Automatically finds and links all alphabet buttons starting with "but"
             foreach (Control c in this.Controls)
             {
                 if (c is Button && c.Name.StartsWith("but"))
@@ -57,26 +82,20 @@ namespace Test01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Pøi startu nevyvoláváme InitializeGame, aby se nezaèalo bez obtížnosti
             asd.Text = "Vyberte obtížnost a Start";
         }
 
+        // Sets up a new game session with a random word
         private void InitializeGame()
         {
-            // Kontrola, zda je vybrána obtížnost
             if (difficulty == 0)
             {
-                MessageBox.Show("Nejdøíve musíte vybrat obtížnost v menu!", "Windows XP", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Nejdøíve musíte vybrat obtížnost v menu!", "Šibenice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            gameActive = true;
-
-            // Pokud už se nìkdy hrálo, ukážeme Reset pro pøíštì
-            if (firstGamePlayed)
-            {
-                resetToolStripMenuItem.Visible = true;
-            }
+            gameActive = 1;
+            if (firstGamePlayed == 1) resetToolStripMenuItem.Visible = true;
 
             string levelKey = difficulty == 3 ? "Hard" : (difficulty == 2 ? "Medium" : "Easy");
             selectedWord = wordDatabase[levelKey][rng.Next(wordDatabase[levelKey].Length)].ToUpper();
@@ -88,17 +107,18 @@ namespace Test01
             Sibenice.Invalidate();
         }
 
+        // Refreshes the label with the current word progress
         private void UpdateDisplay()
         {
             asd.Text = string.Join(" ", currentStatus.ToCharArray());
         }
 
+        // Logic triggered when a letter button is clicked
         private void Hra_Click(object sender, EventArgs e)
         {
-            // Pokud hra nebìží (nebyl stisknut Start), tlaèítka nic nedìlají
-            if (!gameActive) return;
+            if (gameActive == 0) return;
 
-            Button? btn = sender as Button;
+            Button btn = sender as Button;
             if (btn == null) return;
 
             string letterStr = btn.Text.Trim();
@@ -110,6 +130,7 @@ namespace Test01
             char guessedLetter = letterStr.ToUpper()[0];
             btn.Enabled = false;
 
+            // Check if the guessed letter exists in the word
             if (selectedWord.Contains(guessedLetter))
             {
                 char[] statusArray = currentStatus.ToCharArray();
@@ -120,59 +141,57 @@ namespace Test01
                 currentStatus = new string(statusArray);
                 UpdateDisplay();
 
+                // Win condition check
                 if (!currentStatus.Contains('_'))
                 {
-                    gameActive = false;
-                    firstGamePlayed = true;
+                    gameActive = 0;
+                    firstGamePlayed = 1;
                     resetToolStripMenuItem.Visible = true;
                     MessageBox.Show("Výhra! Slovo bylo: " + selectedWord, "Gratulace", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
+                // Wrong guess adds to the hangman drawing
                 errorCount++;
                 Sibenice.Invalidate();
 
+                // Loss condition check
                 if (errorCount >= maxErrors)
                 {
-                    gameActive = false;
-                    firstGamePlayed = true;
+                    gameActive = 0;
+                    firstGamePlayed = 1;
                     resetToolStripMenuItem.Visible = true;
                     MessageBox.Show("Prohra! Slovo bylo: " + selectedWord, "Konec hry", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
         }
 
+        // Handles the visual rendering of the hangman character
         private void Sibenice_Paint(object sender, PaintEventArgs e)
         {
-            Graphics g = e.Graphics;
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            int centerX = Sibenice.Width / 2;
-            int groundY = 240;
-            int topY = 40;
-            int gallowsX = centerX - 60;
-            int ropeX = centerX + 40;
-
             using (Pen pen = new Pen(Color.Black, 4))
             {
-                // ZÁKLADNA
-                g.DrawLine(pen, centerX - 120, groundY, centerX + 120, groundY);
+                int w2 = Sibenice.Width / 2;
 
-                if (errorCount >= 1) g.DrawLine(pen, gallowsX, groundY, gallowsX, topY);
-                if (errorCount >= 2) g.DrawLine(pen, gallowsX, topY, ropeX, topY);
-                if (errorCount >= 3) g.DrawLine(pen, gallowsX, topY + 40, gallowsX + 40, topY);
-                if (errorCount >= 4) g.DrawLine(pen, ropeX, topY, ropeX, topY + 30);
+                // Draw ground base
+                e.Graphics.DrawLine(pen, w2 - 120, 240, w2 + 120, 240);
 
-                if (errorCount >= 5) g.DrawEllipse(pen, ropeX - 15, topY + 30, 30, 30);
-                if (errorCount >= 6) g.DrawLine(pen, ropeX, topY + 60, ropeX, topY + 130);
-                if (errorCount >= 7) g.DrawLine(pen, ropeX, topY + 75, ropeX - 25, topY + 105);
-                if (errorCount >= 8) g.DrawLine(pen, ropeX, topY + 75, ropeX + 25, topY + 105);
-                if (errorCount >= 9) g.DrawLine(pen, ropeX, topY + 130, ropeX - 25, topY + 170);
-                if (errorCount >= 10) g.DrawLine(pen, ropeX, topY + 130, ropeX + 25, topY + 170);
+                // Draw gallows and man based on error count
+                if (errorCount >= 1) e.Graphics.DrawLine(pen, w2 - 60, 240, w2 - 60, 40);
+                if (errorCount >= 2) e.Graphics.DrawLine(pen, w2 - 60, 40, w2 + 40, 40);
+                if (errorCount >= 3) e.Graphics.DrawLine(pen, w2 - 60, 80, w2 - 20, 40);
+                if (errorCount >= 4) e.Graphics.DrawLine(pen, w2 + 40, 40, w2 + 40, 70);
+                if (errorCount >= 5) e.Graphics.DrawEllipse(pen, w2 + 25, 70, 30, 30);
+                if (errorCount >= 6) e.Graphics.DrawLine(pen, w2 + 40, 100, w2 + 40, 170);
+                if (errorCount >= 7) e.Graphics.DrawLine(pen, w2 + 40, 115, w2 + 15, 145);
+                if (errorCount >= 8) e.Graphics.DrawLine(pen, w2 + 40, 115, w2 + 65, 145);
+                if (errorCount >= 9) e.Graphics.DrawLine(pen, w2 + 40, 170, w2 + 15, 210);
+                if (errorCount >= 10) e.Graphics.DrawLine(pen, w2 + 40, 170, w2 + 65, 210);
             }
         }
 
+        // Reactivates all alphabet buttons for a new round
         private void ResetVirtualKeyboard()
         {
             foreach (Control c in this.Controls)
@@ -181,50 +200,40 @@ namespace Test01
             }
         }
 
-        // --- MENU EVENTY ---
-        private void startToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InitializeGame();
-        }
-
-        private void resetToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InitializeGame();
-        }
-
-        private void endToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        // Menu item click handlers
+        private void startToolStripMenuItem_Click(object sender, EventArgs e) => InitializeGame();
+        private void resetToolStripMenuItem_Click(object sender, EventArgs e) => InitializeGame();
+        private void endToolStripMenuItem_Click(object sender, EventArgs e) => Application.Exit();
 
         private void easyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             difficulty = 1;
-            SetMenuChecks(true, false, false);
+            SetMenuChecks(1, 0, 0);
         }
 
         private void mediumToolStripMenuItem_Click(object sender, EventArgs e)
         {
             difficulty = 2;
-            SetMenuChecks(false, true, false);
+            SetMenuChecks(0, 1, 0);
         }
 
         private void hardToolStripMenuItem_Click(object sender, EventArgs e)
         {
             difficulty = 3;
-            SetMenuChecks(false, false, true);
+            SetMenuChecks(0, 0, 1);
         }
 
-        // Pomocná metoda pro vizuální kontrolu v menu (XP styl)
-        private void SetMenuChecks(bool e, bool m, bool h)
+        // Updates the checkmarks in the difficulty menu
+        private void SetMenuChecks(int e, int m, int h)
         {
-            easyToolStripMenuItem.Checked = e;
-            mediumToolStripMenuItem.Checked = m;
-            hardToolStripMenuItem.Checked = h;
+            easyToolStripMenuItem.Checked = (e == 1);
+            mediumToolStripMenuItem.Checked = (m == 1);
+            hardToolStripMenuItem.Checked = (h == 1);
         }
 
         private void asd_Click(object sender, EventArgs e) { }
 
+        // Displays game manual
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(@"How to Play:
@@ -233,13 +242,10 @@ namespace Test01
 2. Click 'Start' in the 'Actions' menu to begin.
 3. Guess letters using the on-screen keyboard.
 4. If you've played at least one game, use 'Reset' in the Actions menu to play again.
-5. To exit, select 'Exit' in the 'Actions' menu.",
-"Instructions",
-MessageBoxButtons.OK,
-MessageBoxIcon.Question);
-            
+5. To exit, select 'Exit' in the 'Actions' menu.", "Instructions", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
+        // Displays credits and version info
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show($@"Hangman v1.0
@@ -247,10 +253,7 @@ MessageBoxIcon.Question);
 Developed in: Visual Studio 2022
 Platform: .NET 8.0
 
-© {DateTime.Now.Year} All rights reserved.",
-"About Hangman",
-MessageBoxButtons.OK,
-MessageBoxIcon.Information);
+© {DateTime.Now.Year} All rights reserved.", "About Hangman", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
