@@ -82,7 +82,7 @@ namespace Test01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            asd.Text = "Vyberte obtížnost a Start";
+            asd.Text = "Reffer to the Help menu";
         }
 
         // Sets up a new game session with a random word
