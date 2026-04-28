@@ -1,0 +1,1 @@
+Jedná se o jednoduchou hru šibenice převážně v angličtině, je to velice jednoduchá aplikace pouze s 96 slovy celkem. Více informací bude v přiložené word dokumentu obsahujícím dokumentaci k tomuto školnímu projektu
