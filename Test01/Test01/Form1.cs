@@ -9,24 +9,24 @@ namespace Test01
     public partial class Form1 : Form
     {
         // --- GLOBAL GAME STATE VARIABLES ---
-        // Used to generate random word indices from the database
+        // Used to select a random word from the word database
         Random rng = new Random();
 
-        // Level indicator (0: None, 1: Easy, 2: Medium, 3: Hard)
+        // Difficulty selection (1: Easy, 2: Medium, 3: Hard)
         int difficulty = 0;
 
-        // The word chosen for the current round and its hidden display (e.g., "_ _ _")
+        // Currently choosen word and underscores
         string selectedWord = "";
         string currentStatus = "";
 
-        // Track mistake progress (errorCount) against the maximum allowed (maxErrors)
+        // Mistake counter with maximum of allowed mistakes
         int errorCount = 0;
         int maxErrors = 10;
 
-        // Game flow control (1: Game is running, 0: Game is paused or ended)
+        // Game status (1: Game is running, 0: Game is paused or ended)
         int gameActive = 0;
 
-        // Historical tracker to decide when to show the 'Reset' button (1: Yes, 0: No)
+        // Used to hide the reset button if it is the first game played (1: Shown, 0: Hidden)
         int firstGamePlayed = 0;
 
         // Word storage categorized by difficulty level
@@ -90,7 +90,7 @@ namespace Test01
         {
             if (difficulty == 0)
             {
-                MessageBox.Show("Nejdøíve musíte vybrat obtížnost v menu!", "Šibenice", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("You need to sellect the difficulty first", "Hangman", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -248,12 +248,18 @@ namespace Test01
         // Displays credits and version info
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($@"Hangman v1.0
+            MessageBox.Show($@"Hangman v1.0.5
 -------------------------------------------------------------------------------
 Developed in: Visual Studio 2022
 Platform: .NET 8.0
+Autor: Petr Knápek
+Class: T3A
+Subject: PRG
+School year: 2025/2026
+School: SPŠEI Frenštát Pod Radhoštìm, pøízpìvková organizace
 
-© {DateTime.Now.Year} All rights reserved.", "About Hangman", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+{DateTime.Now.Year} No rights reserved.", "About Hangman", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
