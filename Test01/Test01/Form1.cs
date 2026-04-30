@@ -147,7 +147,7 @@ namespace Test01
                     gameActive = 0;
                     firstGamePlayed = 1;
                     resetToolStripMenuItem.Visible = true;
-                    MessageBox.Show("Výhra! Slovo bylo: " + selectedWord, "Gratulace", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("You won! The word was: " + selectedWord, "Congratulations", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
@@ -162,7 +162,7 @@ namespace Test01
                     gameActive = 0;
                     firstGamePlayed = 1;
                     resetToolStripMenuItem.Visible = true;
-                    MessageBox.Show("Prohra! Slovo bylo: " + selectedWord, "Konec hry", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Maybye next time. The word was: " + selectedWord, "Maybye next time", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
             }
         }
